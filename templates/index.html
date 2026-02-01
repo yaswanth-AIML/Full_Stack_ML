@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Titanic Survival Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>🚢 Titanic Survival Prediction</h2>
+        <form action="/predict" method="post">
+            <label>Passenger Class:</label>
+            <input type="number" name="pclass" min="1" max="3"><br>
+
+            <label>Sex:</label>
+            <select name="sex"><option>male</option><option>female</option></select><br>
+
+            <label>Age:</label>
+            <input type="number" name="age"><br>
+
+            <label>SibSp (siblings/spouses aboard):</label>
+            <input type="number" name="sibsp"><br>
+
+            <label>Parch (parents/children aboard):</label>
+            <input type="number" name="parch"><br>
+
+            <label>Fare:</label>
+            <input type="number" step="0.01" name="fare"><br>
+
+            <label>Embarked:</label>
+            <select name="embarked"><option>S</option><option>C</option><option>Q</option></select><br>
+
+            <input type="submit" value="Predict" class="btn">
+        </form>
+        <h3>{{ prediction_text }}</h3>
+    </div>
+</body>
+</html>

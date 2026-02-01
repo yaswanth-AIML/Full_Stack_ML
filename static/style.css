@@ -1,0 +1,66 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("../static/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.15); /* semi-transparent */
+    backdrop-filter: blur(12px);           /* frosted glass effect */
+    -webkit-backdrop-filter: blur(12px);   /* Safari support */
+    padding: 30px;
+    margin: 60px auto;
+    width: 420px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+    color: #ffdd57;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: #ffdd57;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffc107;
+    transform: scale(1.05);
+}
+
+h3 {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 22px;
+    color: #00ffcc;
+}
