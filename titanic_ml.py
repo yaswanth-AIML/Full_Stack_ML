@@ -40,27 +40,17 @@ data.isnull().sum()
 data['Embarked']
 
 data['Embarked'].fillna(data['Embarked'].mode()[0], inplace=True)
-
 data['Embarked']=data['Embarked'].replace({'S':0,'C':1,'Q':2})
-
 data.isnull().sum().sum()
-
 data.info()
-
 x=data.drop(['Survived','PassengerId'],axis=1)
 y=data['Survived']
-
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2)
-
 regression=model()
 regression.fit(x_train,y_train)
-
 prediction=regression.predict(x_test)
-
 accuracy_score(prediction,y_test)
-
 print(prediction)
-
 import pickle
 with open("titanic_model.pkl", "wb") as f:
     pickle.dump(regression, f)
