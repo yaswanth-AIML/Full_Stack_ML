@@ -5,7 +5,6 @@ It demonstrates the complete workflow: **data preprocessing, model training, and
 The **frontend interface was created with the help of AI assistance**, showing how modern AI tools can accelerate UI design while I focused on backend engineering and ML pipeline quality.
 
 ---
-
 ---
 
 ## ⚙️ Features
@@ -45,7 +44,7 @@ Visit: http://127.0.0.1:5000/
 - Enhance UI with Bootstrap or glassmorphism CSS.
 - Experiment with advanced models (Random Forest, XGBoost).
 ---
-##👨‍💻 Author
+###👨‍💻 Author
 Yaswanth Vanacharla (Yash)
 Computer Science student specializing in AI & backend engineering.
 Frontend polished with AI assistance to accelerate design and focus on ML pipeline quality.
